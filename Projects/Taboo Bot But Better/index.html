@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>
+
+</p>
+
+
+<script>
+    
+    var originalMessage;
+    var inProgressMessage = [];
+    var completedMessage = [];
+    
+    originalMessage = prompt("What is your message?")
+    if (originalMessage != null) {
+        for(var i = 0; i < originalMessage.length; i++) {
+            console.log("Ran the for loop")
+            switch(originalMessage.charAt(i)) {
+                    case "A":
+                        inProgressMessage.push("Δ");
+                    break;
+
+                    case "B":
+                        inProgressMessage.push("13");
+                    break;
+
+                    case "C":
+                        inProgressMessage.push("?");
+                    break;
+
+                    case "D":
+                        inProgressMessage.push("?");
+                    break;
+                    
+                    case "E":
+                    inProgressMessage.push("Ǝ");
+                    break;
+                    
+                    case "F":
+                    inProgressMessage.push("?");
+                    break;
+                    
+                    case "G":
+                    inProgressMessage.push("?");
+                    break;
+                    
+                    case "H":
+                    inProgressMessage.push("?");
+                    break;
+                    
+                    case "I":
+                    inProgressMessage.push("1");
+                    break;
+                    
+                    case "J":
+                    inProgressMessage.push("?");
+                    break;
+                    
+                    case "K":
+                    inProgressMessage.push("?");
+                    break;
+                    
+                    case "L":
+                    inProgressMessage.push("?");
+                    break;
+                    
+                    case "M":
+                    inProgressMessage.push("?");
+                    break;
+                    
+                    case "N":
+                    inProgressMessage.push("?");
+                    break;
+                    
+                    case "O":
+                    inProgressMessage.push("0");
+                    break;
+                    
+                    case "P":
+                    inProgressMessage.push("?");
+                    break;
+                    
+                    case "Q":
+                    inProgressMessage.push("?");
+                    break;
+                    
+                    case "R":
+                    inProgressMessage.push("?");
+                    break;
+                    
+                    case "S":
+                    inProgressMessage.push("$");
+                    break;
+                    
+                    case "T":
+                    inProgressMessage.push("?");
+                    break;
+                    
+                    case "U":
+                    inProgressMessage.push("?");
+                    break;
+                    
+                    case "V":
+                    inProgressMessage.push("?");
+                    break;
+                    
+                    case "W":
+                    inProgressMessage.push("?");
+                    break;
+                    
+                    case "X":
+                    inProgressMessage.push("?");
+                    break;
+                    
+                    case "Y":
+                    inProgressMessage.push("?");
+                    break;
+                    
+                    case "Z":
+                    inProgressMessage.push("?");
+                    break;
+                    
+                    case "a":
+                    inProgressMessage.push("@");
+                    break;
+                    
+                    case "b":
+                    inProgressMessage.push("🅱️");
+                    break;
+                    
+                    case "c":
+                    inProgressMessage.push("?");
+                    break;
+                    
+                    case "d":
+                    inProgressMessage.push("?");
+                    break;
+                    
+                    case "e":
+                    inProgressMessage.push("ǝ");
+                    break;
+                    
+                    case "f":
+                    inProgressMessage.push("?");
+                    break;
+                    
+                    case "g":
+                    inProgressMessage.push("?");
+                    break;
+                    
+                    case "h":
+                    inProgressMessage.push("?");
+                    break;
+                    
+                    case "i":
+                    inProgressMessage.push("?");
+                    break;
+                    
+                    case "j":
+                    inProgressMessage.push("?");
+                    break;
+                    
+                    case "k":
+                    inProgressMessage.push("?");
+                    break;
+                    
+                    case "l":
+                    inProgressMessage.push("?");
+                    break;
+                    
+                    case "m":
+                    inProgressMessage.push("?");
+                    break;
+                    
+                    case "n":
+                    inProgressMessage.push("?");
+                    break;
+                    
+                    case "o":
+                    inProgressMessage.push("?");
+                    break;
+                    
+                    case "p":
+                    inProgressMessage.push("?");
+                    break;
+                    
+                    case "q":
+                    inProgressMessage.push("?");
+                    break;
+                    
+                    case "r":
+                    inProgressMessage.push("?");
+                    break;
+                    
+                    case "s":
+                    inProgressMessage.push("?");
+                    break;
+                    
+                    case "t":
+                    inProgressMessage.push("?");
+                    break;
+                    
+                    case "u":
+                    inProgressMessage.push("?");
+                    break;
+                    
+                    case "v":
+                    inProgressMessage.push("?");
+                    break;
+                    
+                    case "w":
+                    inProgressMessage.push("?");
+                    break;
+                    
+                    case "x":
+                    inProgressMessage.push("?");
+                    break;
+                    
+                    case "y":
+                    inProgressMessage.push("?");
+                    break;
+                    
+                    case "z":
+                    inProgressMessage.push("?");
+                    break;
+
+                    default:
+                        inProgressMessage.push(originalMessage.charAt(i));
+                    break;
+            }
+        }
+        
+        console.log(inProgressMessage);
+        completedMessage = inProgressMessage.join("");
+        console.log(completedMessage);
+        
+    }
+
+</script>
+
+</body>
+</html>

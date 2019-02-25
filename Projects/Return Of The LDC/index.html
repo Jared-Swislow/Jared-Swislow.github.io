@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>Return of the LAUREN DAVIS CHALLENGE!</title>
+    </head>
+    <script>
+        var DaysPerMonth = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+        var confirmedDates = [];
+        var datesList;
+        var yearVandalismCount = [{year:2000, numberOfAttacks:0}];
+        var mostVandalism = [];
+        var leastVandalism = [];
+        
+        for(var years = 2001; years < 2100; years++) {
+            yearVandalismCount.push({year:years, numberOfAttacks:0});
+            for(var months = 1; months <= 12; months++) {
+                for(var days = 1; days <= DaysPerMonth[months - 1]; days++) {
+                    if((days * months) === (years-2000)) {
+                        confirmedDates.push(months + "-" + days + "-" + years);
+                    }
+                }
+            }
+        }
+        
+        for(var i = 1; i < confirmedDates.length; i++) {
+            //console.log(yearVandalismCount[(confirmedDates[i].slice(-4)-2000)]);
+            yearVandalismCount[(confirmedDates[i].slice(-4)-2000)].numberOfAttacks++;
+        }
+        for(var i = 2; i < yearVandalismCount.length; i++) {
+            if(yearVandalismCount[i].numberOfAttacks == 7) {
+                mostVandalism.push(i+2000);
+            } else if (yearVandalismCount[i].numberOfAttacks == 0) {
+                leastVandalism.push(i+2000);
+            }
+        }
+        
+        //console.log(mostVandalism);
+        //console.log(leastVandalism);
+        //console.log(yearVandalismCount);
+        //console.log(confirmedDates);
+        
+        console.log("There will be " + confirmedDates.length + " attacks between the beginning of 2001 and the end of 2099.");
+        console.log(mostVandalism + " will see the most vandalism.");
+        console.log("These years will see no attacks: " + leastVandalism);
+        //console.log("The longest gap between any attacks will be from " + first + " to " + last);
+    </script>
+</html>
