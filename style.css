@@ -1,12 +1,12 @@
 :root {
 	--dark-blue: #200599; /*CHANGE*/
-	--creme-background: #ebe8d1; /*CHANGE probably*/
+	--creme: #ebe8d1; /*CHANGE probably*/
 }
 
 body {
     margin: 0;
 	
-	background: var(--creme-background);
+	background: var(--creme);
 	font-family: 'Jost', sans-serif;
 }
 
@@ -16,10 +16,9 @@ h1 {
 	
 	background-color: var(--dark-blue);
 	
-	/*font-family: sans-serif;/*REPLACE WITH OTHER FONT LATER*/
 	text-align: center;
 	font-size: 3em;
-	color: var(--creme-background);
+	color: var(--creme);
 }
 
 h2 {
@@ -27,10 +26,9 @@ h2 {
 	
 	background-color: var(--dark-blue);
 	
-	/*font-family: sans-serif; /*REPLACE LATER*/
 	text-align: center;
 	font-size: 1.25em;
-	color: var(--creme-background);
+	color: var(--creme);
 }
 
 nav {
@@ -41,18 +39,31 @@ nav {
 	text-align: center;
 }
 
-a {
+a:link, a:visited {
 	margin: 0 1em 0 1em;
 	
-	/*font-family: sans-serif; /*REPLACE LATER*/
+	text-decoration: none;
 	font-size: 2em;
-	/*MAKE IT NOT UNDERLINED*/
-	color: var(--creme-background);
+	color: var(--creme);
+	
+	
 }
 
+a:hover {
+	transition: all 0.4s;
+	text-shadow: 2px 2px 5px white;
+}
 
+a.resumeLink {
+	margin: 0;
+	padding: 15px;
+	
+	background-color: var(--dark-blue);
+	color: var(--creme);
+	text-align: center;
+}
 
-
-
-
+i.resumeLink {
+	color: var(--creme);
+}
 
