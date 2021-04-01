@@ -1,0 +1,57 @@
+:root {
+	--dark-blue: #20f0f0; /*CHANGE*/
+	--creme-background: #fefcf7; /*CHANGE probably*/
+}
+
+body {
+    margin: 0;
+	
+	background: var(--creme-background);
+}
+
+h1 {
+	margin: 0;
+	padding: 15px;
+	
+	background-color: var(--dark-blue);
+	
+	font-family: sans-serif;/*REPLACE WITH OTHER FONT LATER*/
+	text-align: center;
+	font-size: 3em;
+	color: var(--creme-background);
+}
+
+h2 {
+	margin: 0;
+	
+	background-color: var(--dark-blue);
+	
+	font-family: sans-serif; /*REPLACE LATER*/
+	text-align: center;
+	font-size: 1.25em;
+	color: var(--creme-background);
+}
+
+nav {
+	margin: 0;
+	padding: 0.5em 0 0.5em 0;
+	
+	background-color: var(--dark-blue);
+	text-align: center;
+}
+
+a {
+	margin: 0 1em 0 1em;
+	
+	font-family: sans-serif; /*REPLACE LATER*/
+	font-size: 2em;
+	/*MAKE IT NOT UNDERLINED*/
+	color: var(--creme-background);
+}
+
+
+
+
+
+
+
