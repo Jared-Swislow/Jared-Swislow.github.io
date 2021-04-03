@@ -1,6 +1,6 @@
 :root {
-	--dark-blue: #200599; /*CHANGE*/
-	--creme: #ebe8d1; /*CHANGE probably*/
+	--dark-blue: #200599;
+	--creme: #ebe8d1;
 }
 
 body {
@@ -14,29 +14,9 @@ h1 {
 	margin: 0;
 	padding: 15px;
 	
-	background-color: var(--dark-blue);
-	
 	text-align: center;
 	font-size: 3em;
 	color: var(--creme);
-}
-
-h2 {
-	margin: 0;
-	
-	background-color: var(--dark-blue);
-	
-	text-align: center;
-	font-size: 1.25em;
-	color: var(--creme);
-}
-
-nav {
-	margin: 0;
-	padding: 0.5em 0 0.5em 0;
-	
-	background-color: var(--dark-blue);
-	text-align: center;
 }
 
 a:link, a:visited {
@@ -45,8 +25,6 @@ a:link, a:visited {
 	text-decoration: none;
 	font-size: 2em;
 	color: var(--creme);
-	
-	
 }
 
 a:hover {
@@ -56,11 +34,15 @@ a:hover {
 
 a.resumeLink {
 	margin: 0;
-	padding: 15px;
+	margin-left: calc(50% - 87.5px);
 	
-	background-color: var(--dark-blue);
 	color: var(--creme);
 	text-align: center;
+}
+
+div.headingDiv {
+	padding-bottom: 10px;
+	background-color: var(--dark-blue);
 }
 
 i.resumeLink {
