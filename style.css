@@ -91,6 +91,24 @@ a.syllabusLink {
 	text-align: inherit;
 }
 
+a.demoLink {
+	margin: inherit;
+	
+	color: var(--creme);
+	text-decoration: none;
+	font-size: inherit;
+	text-align: inherit;
+}
+
+a.githubLink {
+	margin: inherit;
+	
+	color: var(--creme);
+	text-decoration: none;
+	font-size: inherit;
+	text-align: inherit;
+}
+
 div.headingDiv {
 	padding-bottom: 10px;
 }
